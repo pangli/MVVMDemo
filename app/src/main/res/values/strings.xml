@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name_and_age">%1$s%2$s岁</string>
+</resources>
