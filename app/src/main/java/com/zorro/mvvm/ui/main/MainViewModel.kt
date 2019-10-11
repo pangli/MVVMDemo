@@ -58,9 +58,6 @@ class MainViewModel(application: Application) : BaseAndroidViewModel(application
 
     }
 
-    fun cancelButtonClick() {
-        job2.cancel()
-    }
 
     fun getUser(): MutableLiveData<User> {
         return userData!!

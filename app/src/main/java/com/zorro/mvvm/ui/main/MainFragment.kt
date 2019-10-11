@@ -1,6 +1,7 @@
 package com.zorro.mvvm.ui.main
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.zorro.mvvm.MainActivity2
 import com.zorro.mvvm.R
 import com.zorro.mvvm.databinding.MainFragmentBinding
 import kotlinx.android.synthetic.main.main_fragment.*
@@ -38,6 +40,7 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
         mainFragmentBinding?.viewModel = viewModel
+        mainFragmentBinding?.window = MyClick()
         mainFragmentBinding?.lifecycleOwner = this
 
         //观察者，自己处理
@@ -56,6 +59,17 @@ class MainFragment : Fragment() {
                     it.age
                 )
         })
+    }
+
+    inner class MyClick {
+        fun cancelButtonClick() {
+            // job2.cancel()
+            Intent().apply {
+                setClass(context!!, MainActivity2::class.java)
+                context!!.startActivity(this)
+            }
+
+        }
     }
 
     override fun onDestroy() {

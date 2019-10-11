@@ -1,2 +1,4 @@
 # MVVMDemo
 LiveData+DataBinding+Kotlin+Coroutines
+
+并演示BottomNavigationView+AppBarLayout+CollapsingToolbarLayout+TabLayout一些使用

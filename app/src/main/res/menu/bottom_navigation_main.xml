@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- <item
+             android:id="@+id/action_message"
+             android:enabled="true"
+             android:icon="@mipmap/ic_bottom_message"
+             android:title="@string/str_message"
+             app:showAsAction="ifRoom"/>-->
+    <item
+        android:id="@+id/action_office"
+        android:enabled="true"
+        android:icon="@drawable/bottom_pang"
+        android:title="咨询"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_classroom"
+        android:enabled="true"
+        android:icon="@drawable/bottom_pang"
+        android:title="咨询"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_address_book"
+        android:enabled="true"
+        android:icon="@drawable/bottom_pang"
+        android:title="咨询"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_mine"
+        android:enabled="true"
+        android:icon="@drawable/bottom_pang"
+        android:title="咨询"
+        app:showAsAction="ifRoom" />
+</menu>
